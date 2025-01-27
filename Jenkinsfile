@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Create a Text File') {
             steps {
-                bat 'echo. > "emptyfile.txt"'
+                echo. > "emptyfile.txt"
             }
         }
         stage('Print messege') {
             steps {
-                bat  'echo "Hello from Pipeline!"'
+                echo "Hello from Pipeline!"
             }
         }
     }   
