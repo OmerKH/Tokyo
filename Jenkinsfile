@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:18'  // Ensures Node.js is available
+        }
+    }
 
     stages {
         stage('Checkout') {
