@@ -19,6 +19,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'ls -la'  // List directory contents for debugging
+                sh 'npm -v'  // Log npm version for debugging
+
                 sh 'npm test'
 
             }  
